@@ -1,0 +1,263 @@
+@font-face {
+  font-family: 'Bree Serif';
+  src: url('./fonts/BreeSerif-Regular.ttf');
+}
+
+:root {
+  --bg-color: #F6F1E9;
+  --brown: #594545;
+  --brown-light: #D7C0AE;
+}
+
+#ageModal .modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.custom-bold {
+  font-family: 'Bree Serif', serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  position: relative;
+}
+
+.blocked-body {
+  overflow: hidden;
+  position: relative;
+}
+
+.blocked-body header,
+.blocked-body footer,
+.blocked-body main {
+  filter: blur(10px);
+}
+
+.blocked-body .blocked-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  background: var(--brown);
+  opacity: 0.7;
+}
+
+.bg {
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h2:not(.hero h2) {
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'Bree Serif', serif;
+}
+
+.custom-link {
+  background-color: var(--bs-orange);
+  border-color: var(--bs-orange);
+  border-radius: 12px;
+  font-family: 'Bree Serif', serif;
+}
+
+.custom-link:hover {
+  background-color: var(--bs-warning);
+  border-color: var(--bs-warning);
+  color: var(--brown);
+}
+
+.header {
+  background-color: var(--brown-light);
+}
+
+.nav-link.active {
+  text-decoration: underline;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.hero {
+  position: relative;
+  color: white;
+  z-index: 1;
+}
+
+.hero-gradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: linear-gradient(to left, rgb(0 0 0 / 0%), rgb(0 0 0));
+  z-index: -1;
+}
+
+.hero-content {
+  padding: 8rem 0;
+  z-index: 2;
+}
+
+.about__description {
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-brand__small {
+  font-size: 12px;
+}
+
+.products {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.products .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #cacaca;
+  border-radius: 6px;
+  padding: 1rem;
+  background-color: var(--brown-light);
+}
+
+.products .col p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.products-image {
+  max-width: 130px;
+  border-radius: 6px;
+  box-shadow: 0 0 11px -10px black;
+  transition: 0.3s transform;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.products-image:hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 10px -5px black;
+}
+
+.products--main .products-image {
+  max-width: 150px;
+}
+
+.contact {
+  color: white;
+}
+
+.contact a {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.link-big {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.values {
+  list-style: none;
+  padding: 0;
+  margin: 5rem 0 3rem;
+  gap: 3rem 0;
+}
+
+.values__content {
+  position: relative;
+  background-color: var(--brown);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.4rem;
+  border-radius: 6px;
+}
+
+.values__text {
+  min-height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.values__icon {
+  position: absolute;
+  top: -2rem;
+  left: 0;
+  width: 100%;
+}
+
+.values__icon img {
+  background-color: var(--bg-color);
+  border-radius: 100%;
+  padding: 0.2rem;
+  border: 3px solid var(--brown);
+}
+
+.contact .container {
+  border-radius: 6px;
+}
+
+.footer {
+  margin-top: 4rem;
+  padding: 2rem 0 1rem;
+  background-color: var(--brown);
+  color: white;
+}
+
+.footer .copyright {
+  border-top: 1px solid var(--brown-light);
+  padding-top: 1rem;
+}
+
+@media (max-width: 420px) {
+  .navbar-brand__name {
+    font-size: 1rem;
+  }
+
+  .hero-content {
+    padding: 3rem 0;
+  }
+
+  .footer .d-flex {
+    align-items: center !important;
+  }
+
+  .blockquote p {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .contact .container {
+    border-radius: 0;
+  }
+
+  .contact .p-5 {
+    padding: 1rem !important;
+  }
+
+  .contact a {
+    font-size: 1rem !important;
+  }
+
+  .products .col {
+    border-radius: 0;
+  }
+}

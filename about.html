@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A3 GROUP dis ticaret - sanayi ve ticaret limited Sirketi</title>
+    <meta name="description" content="">
+    <meta name="tags" content="">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles.css">
+    <style>
+      .blocked-body {overflow: hidden;position: relative;}
+      .blocked-body .blocked-bg {position: fixed;width: 100%;height: 100%;top: 0;left: 0;z-index: 4;background: var(--brown);opacity: 0.7;}
+      .blocked-body header, .blocked-body footer, .blocked-body main {filter: blur(10px);}
+    </style>
+  </head>
+  <body>
+
+    <div class="blocked-bg"></div>
+
+    <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <div class="d-flex flex-column custom-bold">
+              <strong class="navbar-brand__name d-flex align-items-center gap-2">
+                <img src="assets/images/cigar.svg" width="20" height="20" class="navbar-brand__logo" alt="">
+                A3 GROUP dis ticaret
+              </strong>
+              <small class="navbar-brand__small">
+                sanayi ve ticaret limited Sirketi
+              </small>
+            </div>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 custom-bold">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">
+                  Products
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Point 1
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Point 2
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero mb-4 bg" style="background-image: url(assets/images/hero-about.jpg);">
+        <div class="hero-gradient"></div>
+        <div class="container pt-4 pb-4">
+          <div class="hero-content text-center custom-bold">
+            <h1>About us</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container">
+          <h2>The company</h2>
+          <hr>
+          <figure class="text-center">
+            <blockquote class="blockquote">
+              <p>The company is located in Antalya, Turkey, thus being inserted in one of the largest hubs in the world.</p>
+            </blockquote>
+            <blockquote class="blockquote">
+              <p>Our concept is commitment based on mutually beneficial cooperation with our partners, meeting the needs of our customers, even elaborate ones, and keeping good terms with the manufacturers and suppliers. We do our best to perform import and export of tobacco products and accessories at a high level in a vast majority of countries in Eastern Europe, Central Asia, the CIS and many others.</p>
+            </blockquote>
+          </figure>
+          <hr>
+        </div>
+      </section>
+
+      <section id="contact" class="contact my-4">
+        <div class="container bg" style="background-image: url(assets/images/contacts.jpg);">
+          <div class="row justify-content-center align-items-center">
+            <div class="d-flex flex-column justify-content-center align-items-center p-5">
+              <h3 class="text-uppercase custom-bold">Contact with us:</h3>
+              <hr>
+              <a href="tel:+905365895996" class="link-big">
+                +90 536 589 5996
+              </a>
+              <a href="mailto:info@TODO.TODO" class="custom-bold">
+                info@TODO.TODO
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row flex-wrap gap-3">
+          <div class="col">
+            <a class="navbar-brand" href="index.html">
+              <div class="d-flex flex-column custom-bold">
+                <strong class="navbar-brand__name d-flex align-items-center gap-2">
+                  <img src="assets/images/cigar-white.svg" width="20" height="20" class="navbar-brand__logo" alt="">
+                  A3 GROUP dis ticaret
+                </strong>
+                <small class="navbar-brand__small">
+                  sanayi ve ticaret limited Sirketi
+                </small>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-column align-items-end">
+              <a href="mailto:info@TODO.TODO" class="nav-link custom-bold">
+                info@TODO.TODO
+              </a>
+              <a href="tel:+905365895996" class="nav-link custom-bold">
+                +90 536 589 5996
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4 copyright custom-bold">
+          © A3 GROUP dis ticaret / 2023
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="ageModal" tabindex="-1" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Confirm Age</h4>
+          </div>
+          <div class="modal-body">
+            <p>Are you really over 18?</p>
+          </div>
+          <div class="modal-footer d-flex justify-content-between">
+            <button type="button" class="btn btn-secondary custom-link">
+              I am under 21
+            </button>
+            <button type="button" class="btn btn-dark custom-link" id="acceptButton" data-dismiss="modal">
+              I am over 21
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/scripts.js"></script>
+  </body>
+</html>

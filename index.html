@@ -47,16 +47,6 @@
                   Products
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Point 1
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Point 2
-                </a>
-              </li>
             </ul>
           </div>
         </div>
@@ -86,6 +76,11 @@
               <p class="about__description">The company is located in Antalya, Turkey, thus being inserted in one of the largest hubs in the world.</p>
             </blockquote>
           </figure>
+          <div class="d-grid col-9 col-md-4 mt-4 mx-auto">
+            <a href="about.html" class="btn btn-dark custom-link">
+              Learn more about us
+            </a>
+          </div>
           <ul class="values row justify-content-center custom-bold">
             <li class="values__item col-12 col-md-4">
               <div class="values__content">
@@ -138,18 +133,13 @@
               </div>
             </li>
           </ul>
-          <div class="d-grid col-9 col-md-4 mt-4 mx-auto">
-            <a href="about.html" class="btn btn-dark custom-link">
-              Learn more about us
-            </a>
-          </div>
         </div>
       </section>
 
       <section class="products products--main" id="products">
         <div class="container">
           <h2 class="mb-4">Products</h2>
-          <div class="row flex-wrap gap-3 custom-bold">
+          <!-- <div class="row flex-wrap gap-3 custom-bold">
             <div class="col d-flex flex-column justify-content-center align-items-center">
               <img src="assets/images/images/1.jpg" class="products-image" alt="">
               <p class="text-center">Aficionado</p>
@@ -190,12 +180,12 @@
               <img src="assets/images/images/10.jpg" class="products-image" alt="">
               <p class="text-center">Casa Turrent</p>
             </div>
+          </div> -->
+          <div class="d-grid col-9 col-md-4 mt-4 mx-auto">
+            <a href="products.html" class="btn btn-dark custom-link">
+              Open the entire brands catalog
+            </a>
           </div>
-        </div>
-        <div class="d-grid col-9 col-md-4 mt-4 mx-auto">
-          <a href="products.html" class="btn btn-dark custom-link">
-            Open the entire brands catalog
-          </a>
         </div>
       </section>
 
@@ -203,13 +193,13 @@
         <div class="container bg" style="background-image: url(assets/images/contacts.jpg);">
           <div class="row justify-content-center align-items-center">
             <div class="d-flex flex-column justify-content-center align-items-center p-5">
-              <h3 class="text-uppercase custom-bold">Contact with us:</h3>
+              <h3 class="text-uppercase custom-bold">Contact us:</h3>
               <hr>
               <a href="tel:+905365895996" class="link-big">
                 +90 536 589 5996
               </a>
-              <a href="mailto:info@TODO.TODO" class="custom-bold">
-                info@TODO.TODO
+              <a href="mailto:info@a3-group.com.tr" class="custom-bold">
+                info@a3-group.com.tr
               </a>
             </div>
           </div>
@@ -236,8 +226,8 @@
           </div>
           <div class="col">
             <div class="d-flex flex-column align-items-end">
-              <a href="mailto:info@TODO.TODO" class="nav-link custom-bold">
-                info@TODO.TODO
+              <a href="mailto:info@a3-group.com.tr" class="nav-link custom-bold">
+                info@a3-group.com.tr
               </a>
               <a href="tel:+905365895996" class="nav-link custom-bold">
                 +90 536 589 5996
@@ -256,13 +246,13 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">Confirm Age</h4>
+            <h4 class="modal-title custom-bold">Confirm Age</h4>
           </div>
           <div class="modal-body">
-            <p>Are you really over 18?</p>
+            <p id="modal-text">Are you really over 18?</p>
           </div>
           <div class="modal-footer d-flex justify-content-between">
-            <button type="button" class="btn btn-secondary custom-link">
+            <button type="button" class="btn btn-secondary custom-link" id="cancelButton">
               I am under 21
             </button>
             <button type="button" class="btn btn-dark custom-link" id="acceptButton" data-dismiss="modal">

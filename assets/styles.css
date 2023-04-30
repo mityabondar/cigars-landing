@@ -59,6 +59,12 @@ h2:not(.hero h2) {
   font-family: 'Bree Serif', serif;
 }
 
+h3 {
+  margin: 1rem 0;
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+}
+
 .custom-link {
   background-color: var(--bs-orange);
   border-color: var(--bs-orange);

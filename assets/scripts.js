@@ -13,11 +13,21 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   const acceptButton = document.getElementById("acceptButton");
+  const cancelButton = document.getElementById("cancelButton");
+  const modalText = document.getElementById("modal-text");
   if (acceptButton) {
     acceptButton.addEventListener('click', function (e) {
       e.preventDefault();
       sessionStorage.setItem("ageConfirmed", true);
       checkAge();
+    });
+  }
+  if (cancelButton && modalText) {
+    console.log(cancelButton)
+    console.log(modalText)
+    cancelButton.addEventListener('click', function (e) {
+      e.preventDefault();
+      modalText.innerHTML("Unfortunately, you cannot continue using the site");
     });
   }
   function showModal() {

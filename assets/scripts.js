@@ -22,12 +22,10 @@ document.addEventListener("DOMContentLoaded", function() {
       checkAge();
     });
   }
-  if (cancelButton && modalText) {
-    console.log(cancelButton)
-    console.log(modalText)
+  if (cancelButton) {
     cancelButton.addEventListener('click', function (e) {
       e.preventDefault();
-      modalText.innerHTML("Unfortunately, you cannot continue using the site");
+      modalText.textContent = "Unfortunately, you cannot continue using the site.";
     });
   }
   function showModal() {
